@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>tut7</title>
+<style type="text/css">
+/* <![CDATA[ */
+span.S0, a.S0 { font-family:sans-serif; font-size:11pt; font-style:normal; font-weight:normal; color:#000000; }
+span.S1, a.S1 { font-family:HBIFGC+CMR12; font-size:12pt; font-style:normal; font-weight:normal; color:#000000; }
+span.S2, a.S2 { font-family:JZDAVX+CMMI12; font-size:12pt; font-style:normal; font-weight:normal; color:#000000; }
+span.S3, a.S3 { font-family:HBIFGC+CMR12; font-size:12pt; font-style:normal; font-weight:normal; text-decoration:underline; color:#000000; }
+span.S4, a.S4 { font-family:monospace; font-size:11pt; font-style:normal; font-weight:normal; color:#ff0000; }
+span.S5, a.S5 { font-family:monospace; font-size:11pt; font-style:normal; font-weight:normal; color:#5500ff; }
+span.S6, a.S6 { font-family:JZDAVX+CMMI12; font-size:12pt; font-style:normal; font-weight:normal; vertical-align:super; color:#000000; }
+p.P0 { text-align:left; margin-top:0pt; margin-left:0pt; margin-right:0pt; margin-bottom:0pt; text-indent:0pt; }
+p.P1 { text-align:left; white-space:pre; margin-top: 0; margin-left: 0; margin-right: 0; margin-bottom: 0; }
+div.C2 { padding-top:0pt; padding-bottom:0pt; padding-left:5.7pt; border-left-width:1pt; border-left-style: solid; border-color: #808080; border-right-width: 0; border-right-style: none; border-top-width: 0; border-top-style: none; border-bottom-width: 0; border-bottom-style: none; }
+div.Csep3in { padding: 0; height: 0; width: 5pt; border-bottom: 1px solid #808080; margin-top:2.85pt; margin-bottom: 0; }
+div.Csep3out { padding: 0; height: 0; width: 3pt; border-bottom: 1px solid #808080; margin-top: 0;  margin-bottom: 0; }
+div.Csep3end { padding: 0; height: 0; width: 5pt; border-bottom: 1px solid #808080; margin-bottom:2.85pt; margin-top: 0; }
+body { background-color:white; }
+@page { margin:56pt; size:595.3pt 841.9pt; background-color:white; }
+/* ]]> */
+</style>
+</head>
+<body>
+<p class="P0"><span class="S1">12) Find the electric potential </span><span class="S2">V </span><span class="S1">(</span><span class="S2">x</span><span class="S1">) and the electric field </span><span class="S2">E </span><span class="S1">(</span><span class="S2">x</span><span class="S1">) along the axis of symmetry</span></p>
+<p class="P0"><span class="S1">for the ring of uniform linear charge density </span><span class="S2"> λ </span><span class="S1">and the disk of uniform areal </span></p>
+<p class="P0"><span class="S1">charge density σ</span><span class="S2"> </span><span class="S1">shown below.</span></p>
+<p class="P0">&nbsp;</p>
+<p class="P0"><span class="S1">Part a) Ring Understand the keywords </span><span class="S3">axis of symmetry</span><span class="S1"> (Green line).&nbsp; Uniform charge density </span><span class="S2">λ unit columb/meter. </span></p>
+<p class="P0"><span class="S2">so dq=length* λ Notice we are revolving around so here variable is angle theta. </span></p>
+<div class="Csep3in"></div>
+<div class="C2">
+<p class="P1"><span class="S4">c0:=plot::Curve3d([1,sin(t),cos(t)], t = 0..a*2*PI,LineColor = RGB::Yellow,LineWidth =2, a = 0 .. 1)</span></p>
+</div>
+<div class="Csep3out"></div>
+<div class="C2">
+<p class="P1"><img alt="plot::Curve3d([1, sin(t), cos(t)], t = 0..2*PI*a)" style="vertical-align:-35%" width="379" height="34" src="tut7_images/math0.png"></img></p>
+</div>
+<div class="Csep3end"></div>
+<div class="Csep3in"></div>
+<div class="C2">
+<p class="P1"><span class="S4">l0:=plot::Line3d([1, 0, 0], [2, 0, 0],LineColor = RGB::Green,LineWidth =1)</span></p>
+</div>
+<div class="Csep3out"></div>
+<div class="C2">
+<p class="P1"><img alt="plot::Line3d([1, 0, 0], [2, 0, 0])" style="vertical-align:-35%" width="263" height="34" src="tut7_images/math1.png"></img></p>
+</div>
+<div class="Csep3end"></div>
+<div class="Csep3in"></div>
+<div class="C2">
+<p class="P1"><span class="S4">l1:=plot::Line3d([1, sin(a), cos(a)], [2, 0, 0], a = 0..2*PI,LineWidth =1)</span></p>
+</div>
+<div class="Csep3out"></div>
+<div class="C2">
+<p class="P1"><img alt="plot::Line3d([1, sin(a), cos(a)], [2, 0, 0])" style="vertical-align:-35%" width="336" height="34" src="tut7_images/math2.png"></img></p>
+</div>
+<div class="Csep3end"></div>
+<p class="P0">&nbsp;</p>
+<div class="Csep3in"></div>
+<div class="C2">
+<p class="P1"><span class="S4">plot(c0,l0,l1,AnimationStyle = Loop)</span></p>
+</div>
+<div class="Csep3out"></div>
+<div class="C2">
+<p class="P1"><img alt="MuPAD graphics" src="q12parta.gif" width="454pt" height="302pt"></img></p>
+</div>
+<div class="Csep3end"></div>
+<p class="P0"><span class="S1">Part (b) Disk, </span><span class="S3">Uniform areal charge density</span><span class="S1">&nbsp; σ </span><span class="S2">unit columb/meter</span><span class="S6">2</span><span class="S2">. </span></p>
+<p class="P0"><span class="S2">so dq=Area*</span><span class="S1">σ, Notice here variable is distance.</span></p>
+<div class="Csep3in"></div>
+<div class="C2">
+<p class="P1"><span class="S4">d0:=plot::Cylindrical([r,phi,1], phi = 0..2*PI, r = 0..a*1,a=0..1)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+</div>
+<div class="Csep3out"></div>
+<div class="C2">
+<p class="P1"><img alt="plot::Cylindrical([r, phi, 1], phi = 0..2*PI, r = 0..a)" style="vertical-align:-35%" width="417" height="34" src="tut7_images/math3.png"></img></p>
+</div>
+<div class="Csep3end"></div>
+<div class="Csep3in"></div>
+<div class="C2">
+<p class="P1"><span class="S4">l2:=plot::Line3d([0, 0, 1], [0, 0, 2],LineColor = RGB::Green,LineWidth =1)</span></p>
+</div>
+<div class="Csep3out"></div>
+<div class="C2">
+<p class="P1"><img alt="plot::Line3d([0, 0, 1], [0, 0, 2])" style="vertical-align:-35%" width="263" height="34" src="tut7_images/math4.png"></img></p>
+</div>
+<div class="Csep3end"></div>
+<div class="Csep3in"></div>
+<div class="C2">
+<p class="P1"><span class="S4">l3:=plot::Line3d([a,0,1], [0, 0, 2], a = 0..1,LineWidth =1)</span></p>
+</div>
+<div class="Csep3out"></div>
+<div class="C2">
+<p class="P1"><img alt="plot::Line3d([a, 0, 1], [0, 0, 2])" style="vertical-align:-35%" width="262" height="34" src="tut7_images/math5.png"></img></p>
+</div>
+<div class="Csep3end"></div>
+<div class="Csep3in"></div>
+<div class="C2">
+<p class="P1"><span class="S4">plot(d0,l2,l3,AnimationStyle = Loop)</span></p>
+</div>
+<div class="Csep3out"></div>
+<div class="C2">
+<p class="P1"><img alt="MuPAD graphics" src="q12partb.gif" width="454pt" height="302pt"></img></p>
+</div>
+<div class="Csep3end"></div>
+<div class="Csep3in"></div>
+<div class="C2">
+<p class="P1">&nbsp;</p>
+</div>
+<div class="Csep3end"></div>
+</body>
+</html>

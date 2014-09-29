@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>tut6</title>
+<style type="text/css">
+/* <![CDATA[ */
+span.S0, a.S0 { font-family:sans-serif; font-size:11pt; font-style:normal; font-weight:normal; color:#000000; }
+span.S1, a.S1 { font-family:monospace; font-size:11pt; font-style:normal; font-weight:normal; color:#ff0000; }
+span.S2, a.S2 { font-family:monospace; font-size:11pt; font-style:normal; font-weight:normal; color:#5500ff; }
+p.P0 { text-align:justify; margin-top:0pt; margin-left:0pt; margin-right:0pt; margin-bottom:0pt; text-indent:0pt; }
+p.P1 { margin-top:0pt; margin-left:0pt; margin-right:0pt; margin-bottom:0pt; text-indent:0pt; }
+p.P2 { text-align:left; white-space:pre; margin-top: 0; margin-left: 0; margin-right: 0; margin-bottom: 0; }
+div.C3 { padding-top:0pt; padding-bottom:0pt; padding-left:5.7pt; border-left-width:1pt; border-left-style: solid; border-color: #808080; border-right-width: 0; border-right-style: none; border-top-width: 0; border-top-style: none; border-bottom-width: 0; border-bottom-style: none; }
+div.Csep4in { padding: 0; height: 0; width: 5pt; border-bottom: 1px solid #808080; margin-top:2.85pt; margin-bottom: 0; }
+div.Csep4out { padding: 0; height: 0; width: 3pt; border-bottom: 1px solid #808080; margin-top: 0;  margin-bottom: 0; }
+div.Csep4end { padding: 0; height: 0; width: 5pt; border-bottom: 1px solid #808080; margin-bottom:2.85pt; margin-top: 0; }
+body { background-color:white; }
+@page { margin:56pt; size:595.3pt 841.9pt; background-color:white; }
+/* ]]> */
+</style>
+</head>
+<body>
+<p class="P0">&nbsp;</p>
+<p class="P1">&nbsp;</p>
+<div class="Csep4in"></div>
+<div class="C3">
+<p class="P2"><span class="S1">h:=plot::Cylindrical([2*sin(phi), phi, r],r=0..2, phi = 0..PI/2,LineColor = RGB::Blue)</span></p>
+</div>
+<div class="Csep4out"></div>
+<div class="C3">
+<p class="P2"><img alt="plot::Cylindrical([2*sin(phi), phi, r], r = 0..2, phi = 0..PI/2)" style="vertical-align:-47%" width="481" height="43" src="tut6_images/math0.png"></img></p>
+</div>
+<div class="Csep4end"></div>
+<div class="Csep4in"></div>
+<div class="C3">
+<p class="P2"><span class="S1">h0:=plot::Spherical([2, u, v], u = 0..PI/2, v = 0..PI/2,LineColor = RGB::Red)</span></p>
+</div>
+<div class="Csep4out"></div>
+<div class="C3">
+<p class="P2"><img alt="plot::Spherical([2, u, v], u = 0..PI/2, v = 0..PI/2)" style="vertical-align:-47%" width="376" height="43" src="tut6_images/math1.png"></img></p>
+</div>
+<div class="Csep4end"></div>
+<div class="Csep4in"></div>
+<div class="C3">
+<p class="P2"><span class="S1">c0:=plot::Curve3d([sqrt(2*t-t^2),t,sqrt(4-2*t)], t = 0..2,LineColor = RGB::Green,LineWidth =2)</span></p>
+</div>
+<div class="Csep4out"></div>
+<div class="C3">
+<p class="P2"><img alt="plot::Curve3d([(2*t - t^2)^(1/2), t, 2^(1/2)*(2 - t)^(1/2)], t = 0..2)" style="vertical-align:-35%" width="428" height="46" src="tut6_images/math2.png"></img></p>
+</div>
+<div class="Csep4end"></div>
+<div class="Csep4in"></div>
+<div class="C3">
+<p class="P2"><span class="S1">plot(h,h0,c0)</span></p>
+</div>
+<div class="Csep4out"></div>
+<div class="C3">
+<p class="P2"><img alt="MuPAD graphics" src="tut6_images/plt26.png" width="454pt" height="302pt"></img></p>
+</div>
+<div class="Csep4end"></div>
+<div class="Csep4in"></div>
+<div class="C3">
+<p class="P2"><span class="S1">h1:=plot::Implicit3d(x^2+y^2-1,x=0..2,y=0..2,z=0..2,LineColor = RGB::Green)</span></p>
+</div>
+<div class="Csep4out"></div>
+<div class="C3">
+<p class="P2"><img alt="plot::Implicit3d(x^2 + y^2 - 1, x = 0..2, y = 0..2, z = 0..2)" style="vertical-align:-33%" width="469" height="43" src="tut6_images/math3.png"></img></p>
+</div>
+<div class="Csep4end"></div>
+<div class="Csep4in"></div>
+<div class="C3">
+<p class="P2"><span class="S1">h2:=plot::Implicit3d(x^2+z^2-1,x=0..2,y=0..2,z=0..2)</span></p>
+</div>
+<div class="Csep4out"></div>
+<div class="C3">
+<p class="P2"><img alt="plot::Implicit3d(x^2 + z^2 - 1, x = 0..2, y = 0..2, z = 0..2)" style="vertical-align:-33%" width="468" height="43" src="tut6_images/math4.png"></img></p>
+</div>
+<div class="Csep4end"></div>
+<div class="Csep4in"></div>
+<div class="C3">
+<p class="P2"><span class="S1">c2:=plot::Curve3d([t,sqrt(1-t^2),sqrt(1-t^2)], t = 0..1,LineColor = RGB::Yellow,LineWidth =2)</span></p>
+</div>
+<div class="Csep4out"></div>
+<div class="C3">
+<p class="P2"><img alt="plot::Curve3d([t, (- t^2 + 1)^(1/2), (- t^2 + 1)^(1/2)], t = 0..1)" style="vertical-align:-30%" width="407" height="43" src="tut6_images/math5.png"></img></p>
+</div>
+<div class="Csep4end"></div>
+<p class="P1"><span class="S0">Curve of Intersection</span></p>
+<div class="Csep4in"></div>
+<div class="C3">
+<p class="P2"><span class="S1">plot(h2,h1,c2)</span></p>
+</div>
+<div class="Csep4out"></div>
+<div class="C3">
+<p class="P2"><img alt="MuPAD graphics" src="tut6_images/plt27.png" width="454pt" height="302pt"></img></p>
+</div>
+<div class="Csep4end"></div>
+<div class="Csep4in"></div>
+<div class="C3">
+<p class="P2"><span class="S1">cr:=plot::Curve3d([t,0,0], t = 0..2,LineColor = RGB::Green,LineWidth =2)</span></p>
+</div>
+<div class="Csep4out"></div>
+<div class="C3">
+<p class="P2"><img alt="plot::Curve3d([t, 0, 0], t = 0..2)" style="vertical-align:-35%" width="273" height="34" src="tut6_images/math6.png"></img></p>
+</div>
+<div class="Csep4end"></div>
+<div class="Csep4in"></div>
+<div class="C3">
+<p class="P2"><span class="S1">s:= plot::Surface([t, t*cos(u), t*sin(u)], t = 0 .. 2, u = 0 ..2*PI)</span></p>
+</div>
+<div class="Csep4out"></div>
+<div class="C3">
+<p class="P2"><img alt="plot::Surface([t, t*cos(u), t*sin(u)], t = 0..2, u = 0..2*PI)" style="vertical-align:-35%" width="463" height="34" src="tut6_images/math7.png"></img></p>
+</div>
+<div class="Csep4end"></div>
+<div class="Csep4in"></div>
+<div class="C3">
+<p class="P2"><span class="S1">plot(cr,s)</span></p>
+</div>
+<div class="Csep4out"></div>
+<div class="C3">
+<p class="P2"><img alt="MuPAD graphics" src="tut6_images/plt28.png" width="454pt" height="302pt"></img></p>
+</div>
+<div class="Csep4end"></div>
+<div class="Csep4in"></div>
+<div class="C3">
+<p class="P2"><span class="S1">f :=&nbsp; u -&gt; u:<br />plot(plot::Surface([u, f(u)*sin(v), f(u)*cos(v)], u = 0 .. 2,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; v = 0 ..a*2*PI, a = 0 .. 1)):</span></p>
+</div>
+<div class="Csep4out"></div>
+<div class="C3">
+<p class="P2"><img alt="MuPAD graphics" src="tut6_images/plt29.png" width="454pt" height="302pt"></img></p>
+</div>
+<div class="Csep4end"></div>
+<div class="Csep4in"></div>
+<div class="C3">
+<p class="P2"><span class="S1">h3:=plot::Function3d(x^2,x=0..1,y=0..1,z=0..1,LineColor = RGB::Green)</span></p>
+</div>
+<div class="Csep4out"></div>
+<div class="C3">
+<p class="P2"><img alt="plot::Function3d(x^2, x = 0..1, y = 0..1)" style="vertical-align:-33%" width="338" height="43" src="tut6_images/math8.png"></img></p>
+</div>
+<div class="Csep4end"></div>
+<div class="Csep4in"></div>
+<div class="C3">
+<p class="P2"><span class="S1">h4:=plot::Implicit3d(z-1+3*x^2+y^2,x=0..2,y=0..2,z=0..2)</span></p>
+</div>
+<div class="Csep4out"></div>
+<div class="C3">
+<p class="P2"><img alt="plot::Implicit3d(z + 3*x^2 + y^2 - 1, x = 0..2, y = 0..2, z = 0..2)" style="vertical-align:-33%" width="515" height="43" src="tut6_images/math9.png"></img></p>
+</div>
+<div class="Csep4end"></div>
+<div class="Csep4in"></div>
+<div class="C3">
+<p class="P2"><span class="S1">c3:=plot::Curve3d([t,sqrt(1-4*t^2),t^2], t = 0..4,LineColor = RGB::Yellow,LineWidth =2)</span></p>
+</div>
+<div class="Csep4out"></div>
+<div class="C3">
+<p class="P2"><img alt="plot::Curve3d([t, (- 4*t^2 + 1)^(1/2), t^2], t = 0..4)" style="vertical-align:-30%" width="369" height="43" src="tut6_images/math10.png"></img></p>
+</div>
+<div class="Csep4end"></div>
+<div class="Csep4in"></div>
+<div class="C3">
+<p class="P2"><span class="S1">plot(h4,h3,c3)</span></p>
+</div>
+<div class="Csep4out"></div>
+<div class="C3">
+<p class="P2"><img alt="MuPAD graphics" src="tut6_images/plt30.png" width="454pt" height="302pt"></img></p>
+</div>
+<div class="Csep4end"></div>
+<div class="Csep4in"></div>
+<div class="C3">
+<p class="P2"><span class="S1">plot(plot::Surface([(5+2*cos(v))*sin(u), (5+2*cos(v))*cos(u), 2*sin(v)], u = 0 .. a*2*PI,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; v = 0 .. 2*PI, a = 0 .. 1)):</span></p>
+</div>
+<div class="Csep4out"></div>
+<div class="C3">
+<p class="P2"><img alt="MuPAD graphics" src="tut6_images/plt31.png" width="454pt" height="302pt"></img></p>
+</div>
+<div class="Csep4end"></div>
+<div class="Csep4in"></div>
+<div class="C3">
+<p class="P2">&nbsp;</p>
+</div>
+<div class="Csep4end"></div>
+<p class="P1">&nbsp;</p>
+</body>
+</html>
